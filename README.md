@@ -88,5 +88,5 @@ The full dataset is ~12GB but only 1% of full dataset is used to analyze and bui
 
 ## 5. File structure
 
-- `Sparkify.ipynb`: exploratory data analysis, data preprocessing, and pilot development of machine learning model on local machine using data subset.
+- `Sparkify.ipynb`: exploratory data analysis, data preprocessing, and pilot development of machine learning model using data subset.
 - `mini_sparkify_event_data.json`: subset of user activity data.
