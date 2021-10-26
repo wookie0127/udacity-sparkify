@@ -1,22 +1,24 @@
 # udacity-sparkify-for-capstone-project
+## 1. Motivation
 This is one of capstone projects of udacity data scientist nanodegree course.
 In this project, called *Sparkify*, we predict churn.
 For more details, Check this [Link](https://medium.com/@giwooklee/sparkify-udacity-data-scientist-nanodegree-6548542f53ce)
 
-## 1. Motivation
+## 2. Problem Introduction
 
 Most customers often do not use services for any reason or no reason so that appropriate marketing is essential to prevent user churn. However, marketing to prevent churn for all users is very inefficient in terms of cost. What if, along with efficient marketing, you could identify users who are likely to leave in advance? 
+In this project, analyze user logs and build machine learning model to find users who are most likely to churn using Spark.
 
-In this project, analyze user logs and build machine learning model to find users who are most likely to churn using Spark
+To achieve this, we will process and extract relevant features from JSON log, and train a machine learning model. Note that we will work with 1% of total data, which size is 12GB. Although data size is very small, assume that subset distribution may be similar with whole data. 
 
-## 2. Datasets
+## 3. Datasets
 
 - **User activity dataset** from [Udacity](https://www.udacity.com/).  
   The dataset logs user information such as user name, song listened, subscription level and so on.   
 
 The full dataset is ~12GB but only 1% of full dataset is used to analyze and build model
 
-## 3. Steps
+## 4. Steps
 
 1. Load and Clean Dataset
 
@@ -71,7 +73,7 @@ The full dataset is ~12GB but only 1% of full dataset is used to analyze and bui
      - Gradient-boosted Trees Classifier ([documentation](https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.classification.GBTClassifier.html))
 
 
-## 4. Results
+## 5. Results
 
 - Model performance on testset:
 
@@ -86,7 +88,7 @@ The full dataset is ~12GB but only 1% of full dataset is used to analyze and bui
   - this needs more time to investigate...
 
 
-## 5. File structure
+## 6. File structure
 
 - `Sparkify.ipynb`: exploratory data analysis, data preprocessing, and pilot development of machine learning model using data subset.
 - `mini_sparkify_event_data.json`: subset of user activity data.
